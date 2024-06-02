@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,600&display=swap');
+
+
+
+
+
+/* ************************* Reset ************************* */
+*,
+*::before,
+*::after{
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  color: black;
+}
+ul{
+  list-style: none;
+}
+img{
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+input,
+button{
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  border: 0;
+}
+/* ************************* pg ************************* */
+.pg{
+  background-image: url("https://i.pinimg.com/originals/a2/27/83/a22783bdccb5d0d0c958360bf9df39bb.gif");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
