@@ -17,17 +17,17 @@ const WeatherC = ({weather, temp}) => {
             <article className='weatherC__info'>
                 <h3 className='weatherC__desc'>"{weather?.weather[0].description}"</h3>
                 <ul className='weatherC__lista'>
-                    <li className='weatherC__item'><span>Wind speed</span> <span>{weather?.wind.speed}m/s</span></li>
-                    <li className='weatherC__item'><span>Clouds</span> <span>{weather?.clouds.all}%</span></li>
-                    <li className='weatherC__item'><span>Pressure</span> <span>{weather?.main.pressure}hPa</span></li>
+                    <li className='weatherC__item'><span>Wind speed</span> <span>{weather?.wind.speed} m/s</span></li>
+                    <li className='weatherC__item'><span>Clouds</span> <span>{weather?.clouds.all} %</span></li>
+                    <li className='weatherC__item'><span>Pressure</span> <span>{weather?.main.pressure} hPa</span></li>
                 </ul>
             </article>
         </section>
         <h2 className="weatherC__temp">{
             iscel ? 
-                temp?.cel + " " + "ºC" 
+                Number(temp?.cel).toFixed(1)  + " " + "ºC" 
                 : 
-                temp?.fah + " " + "ºF"}
+                temp?.fah.toFixed(1) + " " + "ºF"}
         </h2>
         <button className='weatherC__btn' onClick={handleTemp}>Change to {iscel ? "ºF" : "ºC"}</button>
     </div>
